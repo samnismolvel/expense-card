@@ -3,41 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="flex flex-dir-col">
+  <header class="container">
+    <div class="card flex even-columns bg-accent">
+      <div class="flex flex-dir-col text-light-accent">
+        <p class="fs-200">My balance</p> 
+        <span class="fs-500 fw-700">$921.48</span>
+      </div>
+      <img src="./images/logo.svg" alt="">
+    </div>
+  </header>
+  <main class="container">
+    <article class="card flex flex-dir-col bg-light">
+      <h3 class="fs-500 fw-700 text-dark">
+        Spending - Last 7 days
+      </h3>
+      <section class="mid-section flex even-columns text-light fs-200">
+        <div class="mid-section--column flex flex-dir-col">
+          <span id="mon"></span>
+          <p>mon</p>
+        </div>
+        <div class="mid-section--column flex flex-dir-col">
+          <span id="tue"></span>
+          <p>tue</p>
+        </div>
+        <div class="mid-section--column flex flex-dir-col">
+          <span id="wed"></span>
+          <p>wed</p>
+        </div>
+        <div class="mid-section--column flex flex-dir-col">
+          <span id="thu"></span>
+          <p>thu</p>
+        </div>
+        <div class="mid-section--column flex flex-dir-col">
+          <span id="fri"></span>
+          <p>fri</p>
+        </div>
+        <div class="mid-section--column flex flex-dir-col">
+          <span id="sat"></span>
+          <p>sat</p>
+        </div>
+        <div class="mid-section--column flex flex-dir-col">
+          <span id="sun"></span>
+          <p>sun</p>
+        </div>
+      </section>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+      <section class="flex even-columns fs-400 text-light">
+        <div class="flex flex-dir-col">
+          <p>Total this month</p>
+          <span class="fs-700 fw-700 text-dark">$478.33</span>
+        </div>
+        <div class="flex even-columns--rigth flex-dir-col">
+          <!--little inline style for the "+2.4%" to go to the right-->
+          <span class="fw-700 text-dark" style="align-self: flex-end;">
+            +2.4%
+          </span>
+          <p>from last month</p>
+        </div>
+      </section>
+    </article>    
+  </main>  
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <footer class="container flex" style="position: absolute; bottom: 0;">
+    <div>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
   </div>
+</footer>
+    
 </body>
 </html>
