@@ -121,9 +121,7 @@ select {
   gap: var(--flex-gap, 1rem);
 }
 
-.flex-dir-col {
-  flex-direction: column;
-}
+.flex-dir-col {flex-direction: column}
 
 .container {
   padding-inline: 1em;
@@ -214,3 +212,14 @@ select {
 }
 
 .mid-section p {text-align: center}
+
+.footer {
+  position: absolute;
+  
+  width: 50rem;
+  left: 50%;
+  bottom: 0;
+
+  text-align: center;
+  transform: translateX(-50%);
+}
