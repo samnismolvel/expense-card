@@ -203,20 +203,22 @@ select {
   --flex-gap: 0.8rem;
 }
 
+/*graph bars*/
 .mid-section span {
   content: '';
   width: 100%;
-  border-radius: 0.2rem;
   min-height: 0.5rem;
+  border-radius: 0.2rem;
   background: hsl(var(--clr-neutral-header));
 }
 
 .mid-section p {text-align: center}
 
+/*attribution*/
 .footer {
   position: absolute;
-  
-  width: 50rem;
+
+  width: 30ch;
   left: 50%;
   bottom: 0;
 
