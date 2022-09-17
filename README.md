@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/samnismolvel/expense-card)
-- Live Site URL: [](https://samnismolvel.github.io/expense-card/))
+- Solution URL: [My GitHub](https://github.com/samnismolvel/expense-card)
+- Live Site URL: [Live Site](https://samnismolvel.github.io/expense-card/)
 
 ## My process
 
