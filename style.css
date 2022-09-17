@@ -197,7 +197,7 @@ select {
 /*for each graph column and its text*/
 .mid-section--column {
   height: 100%;
-  width: 100%;
+  width: min(100%, 3rem);
 
   justify-content: flex-end;
   --flex-gap: 0.8rem;
@@ -210,6 +210,18 @@ select {
   min-height: 0.5rem;
   border-radius: 0.2rem;
   background: hsl(var(--clr-neutral-header));
+}
+
+.mid-section span:hover {
+  /* Soft red: hsl(10, 79%, 65%) modified*/
+  background: hsla(4, 100%, 70%, 0.8);
+}
+
+.mid-section span.current-day {background: hsl(var(--clr-dark-accent))}
+
+.mid-section span.current-day:hover {
+  /* Cyan: hsl(186, 34%, 60%) modified*/
+  background: hsla(180, 50%, 70%, 0.8);
 }
 
 .mid-section p {text-align: center}
